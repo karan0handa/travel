@@ -1,4 +1,10 @@
 /* eslint-disable react/no-unstable-nested-components */
+
+/*
+eslint
+linebreak-style: ["error", "windows"]
+*/
+
 import { useParams, useSearchParams } from 'react-router-dom';
 import { Container } from '@chakra-ui/react';
 import axios from 'axios';

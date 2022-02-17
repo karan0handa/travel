@@ -4,6 +4,11 @@ import {
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
+/*
+eslint
+linebreak-style: ["error", "windows"]
+*/
+
 export default function Hero() {
   return (
     <Box

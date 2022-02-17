@@ -53,7 +53,7 @@ export function LoginForm() {
       () => navigate('/profile'),
     // eslint-disable-next-line newline-per-chained-call
     ).catch(
-      err=>console.error(err),
+      (err) => console.error(err),
     );
   }
 }

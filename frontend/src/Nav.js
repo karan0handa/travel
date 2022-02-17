@@ -6,6 +6,11 @@ import { faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
+/*
+eslint
+linebreak-style: ["error", "windows"]
+*/
+
 export default function Nav() {
   const [searchText, setSearchText] = useState('');
   const navigate = useNavigate();

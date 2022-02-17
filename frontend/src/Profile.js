@@ -1,5 +1,11 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable react/jsx-props-no-spreading */
+
+/*
+eslint
+linebreak-style: ["error", "windows"]
+*/
+
 import {
   Container, Heading, useEditableControls,
   ButtonGroup, IconButton, Flex, Editable, EditablePreview, EditableInput,

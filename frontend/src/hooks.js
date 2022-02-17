@@ -1,6 +1,11 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
+/*
+eslint
+linebreak-style: ["error", "windows"]
+*/
+
 export default function useRemote(url, defaultValue = []) {
   const [data, setData] = useState(defaultValue);
   const [loading, setLoading] = useState(true);

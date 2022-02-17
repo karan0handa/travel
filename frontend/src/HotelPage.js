@@ -5,6 +5,12 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/jsx-fragments */
+
+/*
+eslint
+linebreak-style: ["error", "windows"]
+*/
+
 import {
   Heading, Flex, Box, Text, Tag, Button, Input, Select, Spinner,
   Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody,

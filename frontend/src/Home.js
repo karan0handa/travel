@@ -8,6 +8,11 @@ import { Link } from 'react-router-dom';
 import Hero from './Hero';
 import { ImageCard } from './Card';
 
+/*
+eslint
+linebreak-style: ["error", "windows"]
+*/
+
 function Home() {
   return (
     <React.Fragment>
