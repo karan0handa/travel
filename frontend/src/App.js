@@ -8,7 +8,8 @@ import HotelPage from './HotelPage';
 import { LoginForm, SignUpForm } from './Forms';
 
 /*
-eslint linebreak-style: ["error", "windows"]
+eslint
+linebreak-style: ["error", "windows"]
 */
 
 function App() {

@@ -9,7 +9,9 @@ import axios from 'axios';
 import useRemote from './hooks';
 
 /*
-eslint linebreak-style: ["error", "windows"]
+eslint
+linebreak-style: ["error", "windows"]
+max-len: 0
 */
 
 export function ImageCard({ image, title, subtitle }) {
