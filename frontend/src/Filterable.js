@@ -5,6 +5,10 @@ import { useState } from 'react';
 import useRemote from './hooks';
 import FilterBar from './Filterbar';
 
+/*
+eslint linebreak-style: ["error", "windows"]
+*/
+
 export default function Filterable({
   dataSource, additionalFilters, map,
 }) {

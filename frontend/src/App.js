@@ -7,6 +7,10 @@ import Search from './Search';
 import HotelPage from './HotelPage';
 import { LoginForm, SignUpForm } from './Forms';
 
+/*
+eslint linebreak-style: ["error", "windows"]
+*/
+
 function App() {
   const hotelData = {
     rooms: {

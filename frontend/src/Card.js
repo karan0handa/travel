@@ -8,6 +8,10 @@ import React from 'react';
 import axios from 'axios';
 import useRemote from './hooks';
 
+/*
+eslint linebreak-style: ["error", "windows"]
+*/
+
 export function ImageCard({ image, title, subtitle }) {
   const styles = {
     color: 'white',
