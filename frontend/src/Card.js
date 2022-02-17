@@ -70,7 +70,11 @@ export function DetailsCard({
           <strong>{`₹${price} `}</strong>
           /night
         </Text>
-        <IconButton icon={<FontAwesomeIcon icon={faHeart} />} style={heartStyle} onClick={() => heartAction()} />
+        <IconButton
+          icon={<FontAwesomeIcon icon={faHeart} />}
+          style={heartStyle}
+          onClick={() => heartAction()}
+        />
       </Box>
     </Flex>
   );

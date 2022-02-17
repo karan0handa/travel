@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import
 {
   Input, Flex, Heading, Link as ChakraLink, Button, IconButton, InputGroup, InputRightElement,
@@ -82,7 +83,6 @@ export function SignUpForm() {
       </Flex>
     </form>
   );
-
   function submitForm(e) {
     e.preventDefault();
     axios.post('http://localhost:3001/register', { name: username, password }).then(
