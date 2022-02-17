@@ -44,11 +44,7 @@ export function LoginForm() {
     axios.post('http://localhost:3001/login', { name: username, password }, { withCredentials: true }).then(console.log).then(
       () => axios.get('http://localhost:3001/user', { withCredentials: true }),
     ).then(
-<<<<<<< HEAD
-      res=>console.log('/user gave', res.data)
-=======
       () => navigate('/profile'),
->>>>>>> 79eadc7e24a156d3f28280bc8feae098cb3e15ab
     // eslint-disable-next-line newline-per-chained-call
     ).catch(
       err=>console.error(err),
