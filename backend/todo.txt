@@ -13,8 +13,10 @@ which will make us able to skip the former step.
   tools
 
   Things not ruled out : 
-  b. Could this be a passport specific issue ? 
+  b. Could this be a passport specific issue? 
 
+2. It's not on the backend, because we've used the same backend on the previous project
+   and I just checked whether it would work or not, and its working.
 
 req.user is simply undefined for the requests we are getting
 withCredentials is false in the response we are getting, seen in Mozilla's dev tools

@@ -4,12 +4,15 @@ const express = require('express')
 const app = express()
 const bcrypt = require('bcrypt')
 const mongoose = require('mongoose')
+const path = require('path')
 const User = require('./models/User')
 const passport = require('passport')
 const flash = require('express-flash')
+const logger = require('morgan');
 const session = require('express-session')
 const cors = require('cors')
 const initializePassport = require('./passport-config/passport-config')
+const cookieParser = require('cookie-parser')
 
 app.use(cors({
     origin : 'http://localhost:3000',
@@ -28,9 +31,11 @@ const db = mongoose.connection
 db.on('error', (error) => console.error(error))
 db.once('open', () => console.log('Connected to Database'))
 
-
+app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+app.use(cookieParser())
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(flash())
 app.use(session({
     secret: process.env.SESSION_SECRET,

@@ -41,14 +41,12 @@ export function LoginForm() {
   function submitForm(e) {
     e.preventDefault();
     axios.post('http://localhost:3001/login', { name: username, password }, { withCredentials: true }).then(console.log).then(
-      () => axios.get('http://localhost:3001/user', {}, { withCredentials: true }),
+      () => axios.get('http://localhost:3001/user', { withCredentials: true }),
     ).then(
-      (response) => {
-        console.log('/user gave', response.data);
-      },
+      res=>console.log('/user gave', res.data)
     // eslint-disable-next-line newline-per-chained-call
     ).catch(
-      (err) => console.error(err),
+      err=>console.error(err),
     );
   }
 }
